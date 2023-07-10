@@ -12,10 +12,10 @@ function sendMail() {
         message: message
     };
 
-    const serviceID = 'service_gyecdv4';
-    const templateID = 'template_onol33f';
+    const SERVICE_ID = 'service_gyecdv4';
+    const TEMPLATE_ID = 'template_onol33f';
 
-    emailjs.send(serviceID, templateID, params)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, params)
         .then((response) => {
             document.getElementById('email').value = '';
             document.getElementById('message').value = '';
