@@ -1,11 +1,11 @@
 /*WORDS CHANGER*/
-const words = ['desire', 'ideas'];
-const getWord = document.querySelector('.changeWord');
+const WORDS = ['desire', 'ideas'];
+const GETWORD = document.querySelector('.changeWord');
 let counter = 0;
 setInterval(updateWords, 2500);
 requestAnimationFrame(updateWords);
 function updateWords() {
-    getWord.innerHTML = words[counter];
+    GETWORD.innerHTML = WORDS[counter];
     counter += 1;
     if (counter > 1) {
         counter = 0;
