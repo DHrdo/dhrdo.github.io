@@ -19,7 +19,6 @@
 }
 
 h1,
-h2,
 h3,
 h4 {
   font-family: "comfortaa";
@@ -339,6 +338,8 @@ header .changeLight img:hover {
 }
 .knowme .description {
   padding: 0 40px;
+  font-family: "montserrat";
+  font-size: 1.1em;
 }
 .knowme .welcome {
   font-size: 1.5em;
