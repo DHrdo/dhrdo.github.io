@@ -23,3 +23,23 @@ menuIcon.addEventListener('click', () => {
         });
     }
 });
+
+/*HIDING MENU WHEN CLICKING ON A MENU ELEMENT*/
+const listElement = document.querySelectorAll('.mobile-list-element');
+listElement.forEach((item) => {
+    item.addEventListener('click', () => {
+        console.log('elemento');
+        menuIcon.classList.remove('rotateShow');
+        showMenu.classList.remove('show-menu');
+        menuIcon.classList.add('rotateHide');
+        showMenu.classList.add('hide-menu');
+
+        showMenu.addEventListener('animationend', () => {
+            if (showMenu.classList.contains('hide-menu')) {
+                setTimeout(() => {
+                    showMenu.style.display = 'none';
+                }, 100);
+            }
+        })
+    })
+})
