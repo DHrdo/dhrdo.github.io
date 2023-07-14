@@ -1,11 +1,7 @@
-@import '../../../assets/sass/common';
+@import '../../../assets/sass/common'; //COMMON CSS RULES (FROM SASS PARTIAL) FOR ALL PAGES
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    height: 2000px;
 }
