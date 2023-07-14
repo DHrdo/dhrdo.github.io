@@ -1,45 +1,4 @@
-/*THEME COLORS*/
-$p-black: #051821;
-$p-lightgrey : #dfe0df;
-$p-darkergrey : #d8d8d8;
-$p-lightOrange : #DE7914;
-
-/*---------*/
-@font-face {
-    font-family: 'montserrat';
-    src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
-    src: url(/assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: 'comfortaa';
-    src: url(/assets/fonts/Comfortaa-VariableFont_wght.ttf);
-}
-
-
-/*----------------------------*/
-/*PRE SETS*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial Narrow', Arial, sans-serif;
-}
-
-h1,
-h3,
-h4 {
-    font-family: 'comfortaa';
-}
-
-p {
-    font-family: 'monserat';
-    font-size: 1.2em;
-}
-
-li {
-    font-family: comfortaa;
-}
+@import 'common';
 
 .light-mode-text {
     color: $p-black;
@@ -70,27 +29,6 @@ li {
     {
     filter: invert(100%);
 }
-
-/*SCROLL BAR*/
-/* width */
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: $p-black;
-    border-radius: 10px;
-}
-
-
-
 
 /*ANIMATIONS*/
 /*MOBILE MENU SHOW*/
