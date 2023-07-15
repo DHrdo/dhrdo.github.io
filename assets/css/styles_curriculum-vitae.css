@@ -646,8 +646,13 @@ main .education ul li {
 main .languages {
   background-color: #dfe0df;
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   text-align: left;
+}
+main .languages .italian,
+main .languages .english,
+main .languages .french {
+  display: flex;
 }
 main .languages h2 {
   margin-top: 20px;
@@ -657,12 +662,13 @@ main .languages h3 {
 }
 main .experiences {
   width: 80%;
-  margin: 40px auto 0 auto;
+  margin: 0 auto;
 }
 main .experiences h2 {
   text-align: left;
 }
 main .experiences ul {
+  margin-top: 20px;
   padding: 0;
   text-align: left;
 }
@@ -682,4 +688,55 @@ main .experiences ul li p {
 }
 main .contact-me a {
   color: #DE7914;
+}
+
+@media screen and (min-width: 768px) {
+  main .self-description .img-bg {
+    max-width: 200px;
+  }
+  main .self-description h2 {
+    max-width: 350px;
+  }
+  main .education {
+    display: grid;
+    justify-content: center;
+  }
+  main .education h2 {
+    text-align: center;
+  }
+  main .languages {
+    display: grid;
+    justify-content: center;
+  }
+  main .experiences {
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+  }
+  main .experiences h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  main .head {
+    grid-column: 2;
+    grid-row: 1/span 2;
+  }
+  main .self-description {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  main .languages {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  main .experiences {
+    grid-column: 2;
+    grid-row: 2/4;
+  }
 }/*# sourceMappingURL=styles_curriculum-vitae.css.map */

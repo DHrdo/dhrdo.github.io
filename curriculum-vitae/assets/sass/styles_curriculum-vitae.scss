@@ -85,8 +85,14 @@ main {
     .languages {
         background-color: $p-lightgrey;
         width: 80%;
-        margin: 0 auto;
+        margin: 10px auto;
         text-align: left;
+
+        .italian,
+        .english,
+        .french {
+            display: flex;
+        }
 
         h2 {
             margin-top: 20px;
@@ -99,13 +105,14 @@ main {
 
     .experiences {
         width: 80%;
-        margin: 40px auto 0 auto;
+        margin: 0 auto;
 
         h2 {
             text-align: left;
         }
 
         ul {
+            margin-top: 20px;
             padding: 0;
             text-align: left;
 
@@ -134,4 +141,75 @@ main {
             color: $p-lightOrange;
         }
     }
+}
+
+//MEDIA QUERIES
+@media screen and (min-width: 768px) {
+    main {
+        .self-description {
+
+            .img-bg {
+                max-width: 200px;
+            }
+
+            h2 {
+                max-width: 350px;
+            }
+        }
+
+        .education {
+            display: grid;
+            justify-content: center;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .languages {
+            display: grid;
+            justify-content: center;
+        }
+
+        .experiences {
+            margin-top: 30px;
+            display: grid;
+            justify-content: center;
+
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+//LAPTOP
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: 500px 500px;
+        justify-content: center;
+        margin: 0 auto;
+
+        .head {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+
+        .self-description {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .languages {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .experiences {
+            grid-column: 2;
+            grid-row: 2 / 4;
+        }
+    }
+
 }
