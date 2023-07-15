@@ -573,4 +573,113 @@ footer ul {
   header .mobile-menu .hamburger-list-container {
     display: none;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.montserrat-font {
+  font-family: "montserrat";
+}
+
+main {
+  background-color: #dfe0df;
+  display: grid;
+  text-align: center;
+  width: 100%;
+  /*
+      .personal-info {
+          width: 80%;
+          margin: 0 auto;
+          border: 1px solid blue;
+          display: grid;
+          grid-template-columns: 30px 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+
+
+      }
+  */
+}
+main .head {
+  margin: 70px 15px 10px 15px;
+}
+main .self-description {
+  max-height: 490px;
+}
+main .self-description .img-bg {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  margin: 20px auto;
+  background-color: #DE7914;
+  border-radius: 33px;
+}
+main .self-description .img-bg img {
+  width: 100%;
+}
+main .self-description .cv-description {
+  position: relative;
+  z-index: 0;
+  top: -60px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  border: 1px solid #DE7914;
+  padding-top: 50px;
+  font-size: 1.14em;
+}
+main .education {
+  width: 80%;
+  margin: 0 auto;
+}
+main .education h2 {
+  text-align: left;
+}
+main .education ul {
+  padding: 0;
+  text-align: left;
+}
+main .education ul li {
+  list-style-type: circle;
+}
+main .languages {
+  background-color: #dfe0df;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+main .languages h2 {
+  margin-top: 20px;
+}
+main .languages h3 {
+  margin-top: 10px;
+}
+main .experiences {
+  width: 80%;
+  margin: 40px auto 0 auto;
+}
+main .experiences h2 {
+  text-align: left;
+}
+main .experiences ul {
+  padding: 0;
+  text-align: left;
+}
+main .experiences ul li {
+  list-style-type: circle;
+}
+main .experiences ul li h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+main .experiences ul li small {
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+main .experiences ul li p {
+  margin-top: -5px;
+}
+main .contact-me a {
+  color: #DE7914;
 }/*# sourceMappingURL=styles_curriculum-vitae.css.map */

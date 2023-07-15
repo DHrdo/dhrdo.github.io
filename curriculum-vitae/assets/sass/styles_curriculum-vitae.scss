@@ -1,2 +1,137 @@
 @import '../../../assets/sass/config';
 @import '../../../assets/sass/common'; //COMMON CSS RULES (FROM SASS PARTIAL) FOR ALL PAGES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat-font {
+    font-family: 'montserrat';
+}
+
+main {
+    background-color: $p-lightgrey;
+    display: grid;
+    text-align: center;
+    width: 100%;
+
+    .head {
+        margin: 70px 15px 10px 15px;
+    }
+
+    .self-description {
+        max-height: 490px;
+
+        .img-bg {
+            position: relative;
+            z-index: 1;
+            width: 70%;
+            margin: 20px auto;
+            background-color: $p-lightOrange;
+            border-radius: 33px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .cv-description {
+            position: relative;
+            z-index: 0;
+            top: -60px;
+            width: 80%;
+            margin: 20px auto 0 auto;
+            border: 1px solid $p-lightOrange;
+            padding-top: 50px;
+
+            font-size: 1.14em;
+        }
+
+    }
+
+    /*
+    .personal-info {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid blue;
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+
+    }
+*/
+
+    .education {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            text-align: left;
+        }
+
+        ul {
+            padding: 0;
+            text-align: left;
+
+            li {
+                list-style-type: circle;
+            }
+        }
+    }
+
+    .languages {
+        background-color: $p-lightgrey;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left;
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .experiences {
+        width: 80%;
+        margin: 40px auto 0 auto;
+
+        h2 {
+            text-align: left;
+        }
+
+        ul {
+            padding: 0;
+            text-align: left;
+
+            li {
+                list-style-type: circle;
+
+                h3 {
+                    font-size: 1.1em;
+                    font-weight: bold;
+                }
+
+                small {
+                    margin-top: -10px;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+
+    .contact-me {
+        a {
+            color: $p-lightOrange;
+        }
+    }
+}
