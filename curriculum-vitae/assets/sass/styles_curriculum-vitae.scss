@@ -24,16 +24,22 @@ main {
     .self-description {
         max-height: 490px;
 
+        h2 {
+            padding: 10px;
+        }
+
         .img-bg {
             position: relative;
             z-index: 1;
-            width: 70%;
+            width: 45vw;
+            max-width: 200px;
             margin: 20px auto;
             background-color: $p-lightOrange;
-            border-radius: 33px;
+            border-radius: 100%;
 
             img {
                 width: 100%;
+                border-radius: 100%;
             }
         }
 
@@ -73,7 +79,7 @@ main {
         }
 
         ul {
-            padding: 0;
+            padding: 0 10px;
             text-align: left;
 
             li {
@@ -108,13 +114,17 @@ main {
         margin: 0 auto;
 
         h2 {
+            margin-top: 50px;
             text-align: left;
         }
 
         ul {
-            margin-top: 20px;
             padding: 0;
             text-align: left;
+
+            li:first-child {
+                margin-top: 30px;
+            }
 
             li {
                 list-style-type: circle;
@@ -147,6 +157,15 @@ main {
 @media screen and (min-width: 768px) {
     main {
         .self-description {
+            max-height: auto;
+
+            h2 {
+                padding: 20px;
+            }
+
+            .cv-description {
+                max-width: 60%;
+            }
 
             .img-bg {
                 max-width: 200px;
@@ -158,11 +177,13 @@ main {
         }
 
         .education {
-            display: grid;
-            justify-content: center;
 
             h2 {
                 text-align: center;
+            }
+
+            ul {
+                padding: 0 30px;
             }
         }
 
@@ -179,6 +200,10 @@ main {
             h2 {
                 text-align: center;
             }
+
+            ul {
+                padding: 0 30px;
+            }
         }
     }
 }
@@ -192,23 +217,79 @@ main {
         margin: 0 auto;
 
         .head {
-            grid-column: 2;
+            margin-top: 40px;
+            grid-column: 1;
             grid-row: 1 / span 2;
+        }
+
+        .education {
+            margin-top: 40px;
+             
+            ul{
+                margin-top: 50px;
+            }
         }
 
         .self-description {
             grid-column: 1;
-            grid-row: 1;
+            grid-row: 2;
+
+            .img-bg {
+                border-radius: 100%;
+                width: 20vw;
+                max-width: 320px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .cv-description {
+                max-width: 90%;
+            }
         }
 
         .languages {
-            grid-column: 1;
-            grid-row: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h2 {
+                position: relative;
+                left: 50%;
+            }
+
+            .italian {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .english {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .french {
+                grid-column: 1;
+                grid-row: 3;
+            }
         }
 
         .experiences {
             grid-column: 2;
             grid-row: 2 / 4;
+
+            h2 {
+                margin-top: 60px;
+            }
+
+            ul {
+                margin-top: -30px;
+            }
+        }
+
+        .contact-me {
+            margin-top: 100px;
+            grid-column: 1 / span 2;
         }
     }
 

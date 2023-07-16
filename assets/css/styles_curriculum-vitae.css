@@ -608,16 +608,21 @@ main .head {
 main .self-description {
   max-height: 490px;
 }
+main .self-description h2 {
+  padding: 10px;
+}
 main .self-description .img-bg {
   position: relative;
   z-index: 1;
-  width: 70%;
+  width: 45vw;
+  max-width: 200px;
   margin: 20px auto;
   background-color: #DE7914;
-  border-radius: 33px;
+  border-radius: 100%;
 }
 main .self-description .img-bg img {
   width: 100%;
+  border-radius: 100%;
 }
 main .self-description .cv-description {
   position: relative;
@@ -637,7 +642,7 @@ main .education h2 {
   text-align: left;
 }
 main .education ul {
-  padding: 0;
+  padding: 0 10px;
   text-align: left;
 }
 main .education ul li {
@@ -665,12 +670,15 @@ main .experiences {
   margin: 0 auto;
 }
 main .experiences h2 {
+  margin-top: 50px;
   text-align: left;
 }
 main .experiences ul {
-  margin-top: 20px;
   padding: 0;
   text-align: left;
+}
+main .experiences ul li:first-child {
+  margin-top: 30px;
 }
 main .experiences ul li {
   list-style-type: circle;
@@ -691,18 +699,26 @@ main .contact-me a {
 }
 
 @media screen and (min-width: 768px) {
+  main .self-description {
+    max-height: auto;
+  }
+  main .self-description h2 {
+    padding: 20px;
+  }
+  main .self-description .cv-description {
+    max-width: 60%;
+  }
   main .self-description .img-bg {
     max-width: 200px;
   }
   main .self-description h2 {
     max-width: 350px;
   }
-  main .education {
-    display: grid;
-    justify-content: center;
-  }
   main .education h2 {
     text-align: center;
+  }
+  main .education ul {
+    padding: 0 30px;
   }
   main .languages {
     display: grid;
@@ -716,6 +732,9 @@ main .contact-me a {
   main .experiences h2 {
     text-align: center;
   }
+  main .experiences ul {
+    padding: 0 30px;
+  }
 }
 @media screen and (min-width: 1024px) {
   main {
@@ -724,19 +743,63 @@ main .contact-me a {
     margin: 0 auto;
   }
   main .head {
-    grid-column: 2;
+    margin-top: 40px;
+    grid-column: 1;
     grid-row: 1/span 2;
+  }
+  main .education {
+    margin-top: 40px;
+  }
+  main .education ul {
+    margin-top: 50px;
   }
   main .self-description {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
+  }
+  main .self-description .img-bg {
+    border-radius: 100%;
+    width: 20vw;
+    max-width: 320px;
+  }
+  main .self-description .img-bg img {
+    width: 100%;
+  }
+  main .self-description .cv-description {
+    max-width: 90%;
   }
   main .languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  main .languages h2 {
+    position: relative;
+    left: 50%;
+  }
+  main .languages .italian {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  main .languages .english {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  main .languages .french {
     grid-column: 1;
     grid-row: 3;
   }
   main .experiences {
     grid-column: 2;
     grid-row: 2/4;
+  }
+  main .experiences h2 {
+    margin-top: 60px;
+  }
+  main .experiences ul {
+    margin-top: -30px;
+  }
+  main .contact-me {
+    margin-top: 100px;
+    grid-column: 1/span 2;
   }
 }/*# sourceMappingURL=styles_curriculum-vitae.css.map */

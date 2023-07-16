@@ -8,6 +8,7 @@ const knowMe = document.querySelector('.knowme');
 const knowledge = document.querySelector('.knowledge-section');
 
 const works = document.querySelector('.works-section');
+const a = document.querySelectorAll('a');
 const h1 = document.querySelectorAll('h1');
 const h2 = document.querySelectorAll('h2');
 const h3 = document.querySelectorAll('h3');
@@ -43,6 +44,9 @@ light.addEventListener('click', () => {
         h2.forEach(element => {
             element.style.color = 'rgb(255, 255, 255)';
         });
+        a.forEach(element => {
+            element.style.color = 'rgb(255, 255, 255)';
+        });
         p.forEach(element => {
             element.style.color = 'rgb(255, 255, 255)';
         });
@@ -76,6 +80,9 @@ light.addEventListener('click', () => {
             element.style.color = 'rgb(5, 24, 33)';
         });
         h2.forEach(element => {
+            element.style.color = 'rgb(5, 24, 33)';
+        });
+        a.forEach(element => {
             element.style.color = 'rgb(5, 24, 33)';
         });
         p.forEach(element => {

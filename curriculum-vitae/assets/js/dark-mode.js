@@ -4,6 +4,15 @@ const light = document.querySelector('.change-light-img');
 const header = document.querySelector('.header');
 const menubg = document.querySelector('.hamburger-list-container');
 
+const main = document.querySelector('main');
+const head = document.querySelector('.head');
+const selfDescription = document.querySelector('.self-description');
+const education = document.querySelector('.education');
+const languages = document.querySelector('.languages');
+const experiences = document.querySelector('.experiences');
+const contactMe = document.querySelector('.contact-me');
+
+
 const h1 = document.querySelectorAll('h1');
 const h2 = document.querySelectorAll('h2');
 const h3 = document.querySelectorAll('h3');
@@ -20,8 +29,15 @@ let darkMode = false;
 light.addEventListener('click', () => {
     if (!darkMode) {
         darkMode = true;
-        header.style.backgroundColor = 'rgb(14,41,84)';
         menubg.style.backgroundColor = 'rgb(14, 41, 84)';
+        main.style.backgroundColor = 'rgb(14,41,84)';
+        header.style.backgroundColor = 'rgb(14,41,84)';
+        head.style.backgroundColor = 'rgb(14, 41, 84)';
+        selfDescription.style.backgroundColor = 'rgb(14, 41, 84)';
+        education.style.backgroundColor = 'rgb(14, 41, 84)';
+        languages.style.backgroundColor = 'rgb(14, 41, 84)';
+        experiences.style.backgroundColor = 'rgb(14, 41, 84)';
+        contactMe.style.backgroundColor = 'rgb(14, 41, 84)';
         h1.forEach(element => {
             element.style.color = 'rgb(255, 255, 255)';
         });
@@ -45,8 +61,16 @@ light.addEventListener('click', () => {
 
     } else {
         darkMode = false;
-        header.style.backgroundColor = 'rgb(223, 224, 223)';
         menubg.style.backgroundColor = 'rgb(223, 224, 223)';
+        header.style.backgroundColor = 'rgb(223, 224, 223)';
+        main.style.backgroundColor = 'rgb(223, 224, 223)';
+        head.style.backgroundColor = 'rgb(223, 224, 223)';
+        selfDescription.style.backgroundColor = 'rgb(223, 224, 223)';
+        education.style.backgroundColor = 'rgb(223, 224, 223)';
+        languages.style.backgroundColor = 'rgb(223, 224, 223)';
+        experiences.style.backgroundColor = 'rgb(223, 224, 223)';
+        contactMe.style.backgroundColor = 'rgb(223, 224, 223)';
+
         h1.forEach(element => {
             element.style.color = 'rgb(5, 24, 33)';
         });
