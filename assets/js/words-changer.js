@@ -1,5 +1,5 @@
 /*WORDS CHANGER*/
-const WORDS = ['desire', 'ideas'];
+const WORDS = ['desire', 'idea'];
 const GETWORD = document.querySelector('.changeWord');
 let counter = 0;
 setInterval(updateWords, 2500);
