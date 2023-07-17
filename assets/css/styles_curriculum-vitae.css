@@ -685,6 +685,9 @@ main .experiences ul li small {
 main .experiences ul li p {
   margin-top: -5px;
 }
+main .contact-me {
+  padding: 0 10px;
+}
 main .contact-me a {
   color: #DE7914;
 }
