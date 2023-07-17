@@ -589,18 +589,6 @@ main {
   display: grid;
   text-align: center;
   width: 100%;
-  /*
-      .personal-info {
-          width: 80%;
-          margin: 0 auto;
-          border: 1px solid blue;
-          display: grid;
-          grid-template-columns: 30px 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-
-
-      }
-  */
 }
 main .head {
   margin: 70px 15px 10px 15px;
@@ -614,15 +602,18 @@ main .self-description h2 {
 main .self-description .img-bg {
   position: relative;
   z-index: 1;
-  width: 45vw;
-  max-width: 200px;
+  height: 150px;
+  width: 150px;
   margin: 20px auto;
   background-color: #DE7914;
   border-radius: 100%;
 }
 main .self-description .img-bg img {
-  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   border-radius: 100%;
+  width: 95%;
 }
 main .self-description .cv-description {
   position: relative;
@@ -699,9 +690,6 @@ main .contact-me a {
 }
 
 @media screen and (min-width: 768px) {
-  main .self-description {
-    max-height: auto;
-  }
   main .self-description h2 {
     padding: 20px;
   }
@@ -747,6 +735,9 @@ main .contact-me a {
     grid-column: 1;
     grid-row: 1/span 2;
   }
+  main .head h2 {
+    margin-top: 50px;
+  }
   main .education {
     margin-top: 40px;
   }
@@ -758,9 +749,9 @@ main .contact-me a {
     grid-row: 2;
   }
   main .self-description .img-bg {
-    border-radius: 100%;
-    width: 20vw;
-    max-width: 320px;
+    width: 15vw;
+    max-width: 170px;
+    background-color: initial;
   }
   main .self-description .img-bg img {
     width: 100%;

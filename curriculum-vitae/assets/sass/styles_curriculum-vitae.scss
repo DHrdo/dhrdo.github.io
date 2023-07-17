@@ -1,5 +1,5 @@
 @import '../../../assets/sass/config';
-@import '../../../assets/sass/common'; //COMMON CSS RULES (FROM SASS PARTIAL) FOR ALL PAGES
+@import '../../../assets/sass/common'; //COMMON CSS RULES FOR ALL PAGES
 
 * {
     margin: 0;
@@ -31,15 +31,19 @@ main {
         .img-bg {
             position: relative;
             z-index: 1;
-            width: 45vw;
-            max-width: 200px;
+            height: 150px;
+            width: 150px;
             margin: 20px auto;
             background-color: $p-lightOrange;
             border-radius: 100%;
 
             img {
-                width: 100%;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
                 border-radius: 100%;
+
+                width: 95%;
             }
         }
 
@@ -56,19 +60,6 @@ main {
         }
 
     }
-
-    /*
-    .personal-info {
-        width: 80%;
-        margin: 0 auto;
-        border: 1px solid blue;
-        display: grid;
-        grid-template-columns: 30px 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-
-
-    }
-*/
 
     .education {
         width: 80%;
@@ -153,11 +144,12 @@ main {
     }
 }
 
-//MEDIA QUERIES
+//*MEDIA QUERIES*
+
+//TABLET
 @media screen and (min-width: 768px) {
     main {
         .self-description {
-            max-height: auto;
 
             h2 {
                 padding: 20px;
@@ -220,12 +212,14 @@ main {
             margin-top: 40px;
             grid-column: 1;
             grid-row: 1 / span 2;
+
+            h2 {margin-top: 50px;}
         }
 
         .education {
             margin-top: 40px;
-             
-            ul{
+
+            ul {
                 margin-top: 50px;
             }
         }
@@ -235,9 +229,9 @@ main {
             grid-row: 2;
 
             .img-bg {
-                border-radius: 100%;
-                width: 20vw;
-                max-width: 320px;
+                width: 15vw;
+                max-width: 170px;
+                background-color: initial;
 
                 img {
                     width: 100%;
