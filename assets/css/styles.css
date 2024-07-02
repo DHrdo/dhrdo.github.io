@@ -646,24 +646,25 @@ footer ul {
 .knowledge-section .myStacks .myStack-img {
   width: 18%;
 }
-.knowledge-section .myStacks .myStack-img:first-child,
-.knowledge-section .myStacks .myStack-img:last-child {
-  margin: 0 20px;
+.stacks-relative {
+  display: flex;
+  justify-content: space-around;
 }
 
 /*--------------FOR SASS IMAGE POSITIONING--------------*/
+/*
 .stacks-relative {
-  position: relative;
+    position: relative;
 }
 
 .absolute {
-  position: absolute;
-  top: 70%;
-  left: 53%;
-  width: 8%;
-  max-width: 10%;
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    width: 8%;
+    max-width: 10%;
 }
-
+*/
 /*---------------------------*/
 /*WORKS SECTION*/
 .works-section {
@@ -755,4 +756,4 @@ footer ul {
     min-height: 65vh;
   }
 }
-/*-------------------------------------------------------------------------------*//*# sourceMappingURL=styles.css.map */
+/*-------------------------------------------------------------------------------*/
